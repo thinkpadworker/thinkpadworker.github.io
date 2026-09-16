@@ -21,5 +21,66 @@
     alert("Copied! Paste this into Minecraft's 'Add Server' screen.");
   }
 </script>
+<div class="server-card">
+    <h2>Join my Minecraft server</h2>
+    <p>Server Address:</p>
+    <div class="address-box">
+        <input type="text" value="mc.samshomelab.dev" id="serverAddress" readonly>
+        <button onclick="copyAddress()">Copy</button>
+    </div>
+</div>
+
+<style>
+    .server-card {
+        max-width: 400px;
+        margin: 40px auto;
+        padding: 24px;
+        background: #1e1e1e;
+        border: 1px solid #333;
+        border-radius: 12px;
+        text-align: center;
+        color: #f0f0f0;
+        font-family: sans-serif;
+    }
+
+    .address-box {
+        display: flex;
+        gap: 8px;
+        margin-top: 12px;
+    }
+
+    #serverAddress {
+        flex: 1;
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #444;
+        background: #2a2a2a;
+        color: #fff;
+        font-size: 14px;
+    }
+
+    .server-card button {
+        padding: 10px 16px;
+        border: none;
+        border-radius: 6px;
+        background: #4caf50;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .server-card button:hover {
+        background: #43a047;
+    }
+</style>
+
+<script>
+    function copyAddress() {
+        const input = document.getElementById("serverAddress");
+        input.select();
+        navigator.clipboard.writeText(input.value);
+        alert("Copied! Paste this into Minecraft's 'Add Server' screen.");
+    }
+</script>
 </body>
 </html>

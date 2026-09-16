@@ -6,6 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <p>sams </p>
+   <div>
+  <h2>Join my Minecraft server</h2>
+  <p>Server Address:</p>
+  <input type="text" value="mc.samshomelab.dev" id="serverAddress" readonly>
+  <button onclick="copyAddress()">Copy Address</button>
+</div>
+
+<script>
+  function copyAddress() {
+    const input = document.getElementById("serverAddress");
+    input.select();
+    navigator.clipboard.writeText(input.value);
+    alert("Copied! Paste this into Minecraft's 'Add Server' screen.");
+  }
+</script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-h1{
+h1 ,h2{
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -71,4 +71,75 @@ ul li a:hover{
 .dropdown:hover .dropdown-content,
 .dropdown:focus-within .dropdown-content{
     display: block;
+}
+
+
+.greetings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 75%;
+    font-size: 20px;
+    margin: 20px auto;
+    color: #393e41;
+
+}
+
+/* Profile Styling */ 
+.pfp{
+    display: flex;
+    flex-direction: row;
+   
+    align-items: center;
+    max-width: 75%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e94f37;
+    border-radius: 10px;
+    color: #393e41;
+}
+
+.pfp-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap:nowrap;
+    min-width: 20%;
+    max-width: 20%;
+    min-height: 20%;
+    max-height: 20%;
+}
+
+
+/* Resume Styling */
+.resumeHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 75%;
+    font-size: 20px;
+    margin: 40px auto;
+    color: #393e41;
+
+}
+
+ol{ 
+    display: block;
+    
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+ol li {
+     display:block;
+    float: left;
+    color:#393e41;
+    text-align: center;
+    padding: 14px 16px;
+   
+    font-size: 20px;
 }
